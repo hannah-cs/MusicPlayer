@@ -21,6 +21,10 @@ public class ArtistsImplementation implements Artists, Searchable {
         }
     }
 
+    public List<Artist> getArtists() {
+        return artistsList;
+    }
+
     @Override
     public List<Artist> search(String searchTerm) {
         List<Artist> matchingArtists = new ArrayList<>();
